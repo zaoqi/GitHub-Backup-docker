@@ -9,3 +9,4 @@ RUN wget -O - https://codeload.github.com/clockfort/GitHub-Backup/tar.gz/$VERSIO
   cd / && \
   rm -fr /GitHub-Backup
 ENTRYPOINT ["/usr/local/bin/github-backup"]
+CMD ["--help"]
