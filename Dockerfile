@@ -8,6 +8,6 @@ RUN wget -O - https://codeload.github.com/clockfort/GitHub-Backup/tar.gz/$VERSIO
   chmod +x /usr/local/bin/github-backup && \
   cd / && \
   rm -fr /GitHub-Backup
-RUN apk add --no-cache git
+RUN apk add --no-cache git openssh
 ENTRYPOINT ["/usr/local/bin/github-backup"]
 CMD ["--help"]
